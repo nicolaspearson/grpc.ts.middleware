@@ -1,6 +1,6 @@
 {
 	"name": "grpc-ts-middleware",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"description": "gRPC pre-call and post-call middleware",
 	"main": "src/index.js",
 	"scripts": {
@@ -29,7 +29,7 @@
 	},
 	"devDependencies": {
 		"@types/node": "~10.12.18",
-		"@types/protobufjs": "^6.0.0",
+		"@types/protobufjs": "~6.0.0",
 		"prettier": "~1.15.3",
 		"protobufjs": "~6.8.8",
 		"ts-node": "~7.0.1",

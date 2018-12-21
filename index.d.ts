@@ -47,7 +47,7 @@ export default class GrpcMiddleware {
 	 * Constructs the gRPC middleware object
 	 * @param server An instance of the gRPC server
 	 * @param preCallHandler An array of functions to be invoked prior to the execution of the gRPC call
-	 * @param postCallHandler An array of functions to be invoked after the actual service handler, but before returning the result
+	 * @param postCallHandler An array of functions to be invoked after the gRPC call has been executed, but before returning the result
 	 */
 	constructor(server: grpc.Server, preMiddleware?: PreMiddleware, postMiddleware?: PostMiddleware);
 
