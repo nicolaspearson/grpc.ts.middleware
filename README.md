@@ -37,12 +37,14 @@ function start(): grpc.Server {
 	const grpcMiddleware = new GrpcMiddleware(
 		// An instance of the gRPC server
 		server,
-		// An array of functions to be invoked prior to the execution of the gRPC call
+		// An array of functions to be invoked prior
+		// to the execution of the gRPC call
 		[
 			(call: GrpcCall) => console.log('Pre-call handler 1', call),
 			(call: GrpcCall) => console.log('Pre-call handler 2', call)
 		],
-		// An array of functions to be invoked after the gRPC call has been executed, but before returning the result
+		// An array of functions to be invoked after the gRPC call
+		// has been executed, but before returning the result
 		[
 			(error: grpc.ServiceError | null, call: GrpcCall) =>
 				console.log('Post-call handler 1', call, error),
