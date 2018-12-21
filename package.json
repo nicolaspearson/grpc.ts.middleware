@@ -1,0 +1,39 @@
+{
+	"name": "grpc-ts-middleware",
+	"version": "1.0.0",
+	"description": "gRPC pre-call and post-call middleware",
+	"main": "src/index.js",
+	"scripts": {
+		"build": "npm run tslint && rm -rf ./src/index.js && npm run build:ts",
+		"build:ts": "tsc --rootDir ./src/",
+		"prettier": "prettier --write \"src/**/*.{ts,tsx,css}\"",
+		"tslint": "tslint --fix -c tslint.json -p tsconfig.json",
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"keywords": [
+		"grpc",
+		"nodejs",
+		"middleware",
+		"tracing",
+		"headers",
+		"typescript"
+	],
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/nicolaspearson/grpc.ts.middleware"
+	},
+	"author": "Nicolas Pearson",
+	"license": "MIT",
+	"dependencies": {
+		"grpc": "~1.17.0"
+	},
+	"devDependencies": {
+		"@types/node": "~10.12.18",
+		"@types/protobufjs": "^6.0.0",
+		"prettier": "~1.15.3",
+		"protobufjs": "~6.8.8",
+		"ts-node": "~7.0.1",
+		"tslint": "~5.12.0",
+		"typescript": "~3.2.2"
+	}
+}
