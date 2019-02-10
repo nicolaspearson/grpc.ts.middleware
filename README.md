@@ -1,6 +1,12 @@
 # gRPC Middleware
 
+[![License][license-image]][license-url]
 [![Current Version](https://img.shields.io/npm/v/grpc-ts-middleware.svg)](https://www.npmjs.com/package/grpc-ts-middleware)
+[![npm](https://img.shields.io/npm/dw/grpc-ts-middleware.svg)](https://www.npmjs.com/package/grpc-ts-middleware)
+![](https://img.shields.io/bundlephobia/min/grpc-ts-middleware.svg?style=flat)
+
+[license-url]: https://opensource.org/licenses/MIT
+[license-image]: https://img.shields.io/npm/l/make-coverage-badge.svg
 
 A library that assists with the implementation of gRPC pre-, and post-call middleware.
 
