@@ -10,10 +10,18 @@
 
 A library that assists with the implementation of gRPC pre-, and post-call middleware.
 
+This library has **zero** external dependencies, but it is assumed that you are using the `grpc` library.
+
 ### Installation
 
 ```
 npm install grpc-ts-middleware --save
+```
+
+Install the `grpc` library:
+
+```
+npm install grpc --save
 ```
 
 ### Dependencies
