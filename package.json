@@ -1,6 +1,6 @@
 {
 	"name": "grpc-ts-middleware",
-	"version": "1.0.5",
+	"version": "1.0.6",
 	"description": "gRPC pre-call and post-call middleware",
 	"main": "src/index.js",
 	"scripts": {
@@ -25,8 +25,8 @@
 	"author": "Nicolas Pearson",
 	"license": "MIT",
 	"devDependencies": {
-		"@types/node": "~11.13.7",
-		"grpc": "~1.20.0",
+		"@types/node": "~11.13.9",
+		"grpc": "~1.20.2",
 		"prettier": "~1.17.0",
 		"protobufjs": "~6.8.8",
 		"ts-node": "~8.1.0",
