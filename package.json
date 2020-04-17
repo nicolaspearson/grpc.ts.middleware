@@ -27,7 +27,7 @@
 	"author": "Nicolas Pearson",
 	"license": "MIT",
 	"devDependencies": {
-		"@types/node": "~13.7.7",
+		"@types/node": "~13.13.0",
 		"grpc": "~1.24.2",
 		"npm-check-updates": "~4.0.2",
 		"prettier": "~1.19.1",
