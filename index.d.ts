@@ -1,4 +1,4 @@
-import * as grpc from 'grpc';
+import * as grpc from '@grpc/grpc-js';
 
 export type PreCallHandler = (call: GrpcCall) => void;
 export type PostCallHandler = (err: grpc.ServiceError | null, call: GrpcCall) => void;
@@ -7,9 +7,9 @@ export type PreMiddleware = PreCallHandler[];
 export type PostMiddleware = PostCallHandler[];
 
 export type GrpcCall =
-	| grpc.ServerUnaryCall<any>
-	| grpc.ServerReadableStream<any>
-	| grpc.ServerWriteableStream<any>
+	| grpc.ServerUnaryCall<any, any>
+	| grpc.ServerReadableStream<any, any>
+	| grpc.ServerWritableStream<any, any>
 	| grpc.ServerDuplexStream<any, any>;
 
 export type GrpcCallHandler = (call: GrpcCall, callback: GrpcCallback) => void;
@@ -39,7 +39,7 @@ export enum tracingHeaders {
 	'x-envoy-internal',
 	'x-b3-traceid',
 	'x-b3-spanid',
-	'x-b3-sampled'
+	'x-b3-sampled',
 }
 
 export default class GrpcMiddleware {
