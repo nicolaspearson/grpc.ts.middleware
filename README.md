@@ -31,7 +31,8 @@ npm install grpc --save
 ### Usage
 
 ```typescript
-import * as grpc from 'grpc';
+import * as grpc from '@grpc/grpc-js';
+
 import GrpcMiddleware, { GrpcCall } from 'grpc-ts-middleware';
 
 import { EchoReply, EchoRequest } from './proto/echo_pb';
